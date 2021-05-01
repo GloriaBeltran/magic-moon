@@ -1,0 +1,71 @@
+body {
+	background-color: #dcffdc;
+	color: #060;
+}
+.titulo {
+	margin-top: 20px;
+}
+.hero{
+	background-image: url(img/hero.png);
+	height: 400px;
+	width: 100%;
+	background-size: 200%;
+	animation: movimiento 13s infinite linear alternate;
+}
+ @keyframes movimiento{
+	from{
+        background-position: bottom left;
+	}to{
+		background-position: top right;
+	}
+}
+.contenido-hero form .submit-buscador {
+	position: absolute;
+	
+	
+}
+.barra{
+	padding: 40px 2;
+	background-color: rgb(132, 196, 67);
+	background: -webkit-linear-gradient(left, #12754c  0%, #060 100%);
+}
+.barra{
+	margin: 0;
+	color: white;
+}
+.img_producto {
+	height: 150px;
+	width: 150px;
+	float: left;
+}
+.formulario {
+	width: 250px;
+	margin: 0 auto;
+	height: 50px;
+}
+p {
+	text-align: center;
+}
+.formulario label {
+	font-size: 20px;
+}
+input[type="radio"] {
+	display: none;
+}
+.label_estrella {
+	color: grey;
+}
+.clasificacion {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+label:hover,
+label:hover ~ label {
+	color: orange;
+}
+input[type="radio"]:checked ~ label {
+	color: orange;
+}
+.btn-group {
+	margin: 0 auto;
+}

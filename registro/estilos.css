@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+.contenedor .main .formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 50px;
+  gap: 20px;
+}
+.contenedor .main .formulario .grupo_nombre {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.contenedor .main .formulario .grupo_email {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.contenedor .main .formulario .grupo_telefono {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.contenedor .main .formulario .grupo_password {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.contenedor .main .formulario .btn {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+body {
+  background-color: #cdffcd;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedor .main {
+  margin: 20px auto 20px;
+}
+.contenedor .main .titulo {
+  font-size: 3vw;
+  color: #005500;
+  text-align: center;
+  font-weight: 600;
+}
+.contenedor .main .formulario {
+  width: 90%;
+  max-width: 800px;
+  margin: 10px auto 0;
+}
+.contenedor .main .formulario .label {
+  display: block;
+  font-size: 1.9vw;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+.contenedor .main .formulario .input {
+  width: 100%;
+  height: 45px;
+  border: 3px #0000 solid;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  line-height: 45px;
+  color: #444;
+  padding: 5px;
+  outline: none;
+  transition: all 300ms ease;
+}
+.contenedor .main .formulario .input:focus {
+  border: 3px #0cb100 solid;
+}
+.contenedor .main .formulario .btn {
+  background-color: #245d32;
+  width: 200px;
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 500;
+  transition: all 300ms ease;
+}
+.contenedor .main .formulario .btn:hover {
+  box-shadow: #245d32 0 0 15px;
+  cursor: pointer;
+}
+.contenedor .main .enlace {
+  color: #090;
+}
+.contenedor .main .texto_usuario_existente {
+  text-align: center;
+  font-size: 1.5vw;
+  color: #222;
+  margin: 15px 0 0;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=estilos.css.map */
