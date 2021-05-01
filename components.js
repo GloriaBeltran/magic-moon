@@ -253,7 +253,7 @@ function renderComponents(parent) {
 				"transition: all 200ms ease;" +
 				"}" +
 				".contenedor .footer .navigation_menu .navigation_menu_ul .list_item .link:hover {" +
-				"color: #888;" +
+				"color: #080;" +
 				"}" +
 				"</style>"
 		);
@@ -269,66 +269,63 @@ function renderComponents(parent) {
 		document.getElementById(parent).innerHTML = contenidoNuevo;
 	}
 	renderFooter(parent);
-}
-renderComponents("contenedor");
-
-// Agregamos un evento para que se desplegue el menu de cuenta cuando se le de al boton
-document.getElementById("btn_account").addEventListener("click", () => {
-	/*
-
-	Primero hay que crear el menu,
-	para eso creamos las variables CSS y HTML
-	
-	*/
-
-	// En CSS ponemos los estilos
-	var CSS = String(
-		'<style>'+
-		'.contenedor .account_menu {'+
-			'position: absolute;'+
-			'top: 160px;'+
-			'right: 120px;'+
-			'display: flex;'+
-			'flex-direction: column;'+
-			'justify-content: space-between;'+
-			'align-items: center;'+
-			'background-color: #97ff97;'+
-			'width: 25%;'+
-			'border-radius: 5px;'+
-			'padding: 20px;'+
-		'}'+
-		'.contenedor .account_menu .texto {'+
+	function renderAccountMenu() {
+		var CSS = String(
+			'<style>'+
+			'.contenedor .account_menu {'+
+				'position: absolute;'+
+				'top: 160px;'+
+				'right: 120px;'+
+				'display: flex;'+
+				'flex-direction: column;'+
+				'justify-content: space-between;'+
+				'align-items: center;'+
+				'background-color: #97ff97;'+
+				'width: 25%;'+
+				'border-radius: 5px;'+
+				'padding: 20px;'+
+			'}'+
+			'.contenedor .account_menu .texto {'+
 			'font-size: 1.2rem;'+
 			'font-weight: 600;'+
-		'}'+
-		'.contenedor .account_menu .enlace .btn {'+
+			'}'+
+			'.contenedor .account_menu .enlace .btn {'+
 			'background-color: #fff;'+
 			'color: #111;'+
 			'border-radius: 3px;'+
 			'font-size: 1.1rem;'+
 			'font-weight: 500;'+
 			'transition: all 300ms ease;'+
-		'}'+
-		'.contenedor .account_menu .enlace .btn:hover {'+
+			'}'+
+			'.contenedor .account_menu .enlace .btn:hover {'+
 			'background-color: #245d32;'+
 			'color: #ddd;'+
-		'}'+
-		'</style>'
-	);
-
-	// En HTML insertamos el codigo HTML
-	var HTML = String(
-		'<div class="account_menu" id="account_menu">'+
-			'<p class="texto">Aún no se ha iniciado sesión.</p>'+
-			'<a href="https://gloriabeltran.github.io/magic-moon/login" class="enlace">'+
-				'<button class="btn" id="btn_new_user">Iniciar sesión</button>'+
-			'</a>'+
-		'</div>'
-	);
-
-	// Ahora insertamos el codigo en el elemento(div) con el id="contenedor"
-	var contenidoAnterior = document.getElementById("contenedor").innerHTML;
-	var contenidoNuevo = contenidoAnterior + (CSS + HTML);
-
-	document.getElementById("contenedor").innerHTML = contenidoNuevo;
+			'}'+
+			'.contenedor .account_menu-oculto {'+
+				'display: none;'+
+			'}'+
+			'</style>'
+			);
+			
+			// En HTML insertamos el codigo HTML
+			var HTML = String(
+				'<div class="account_menu account_menu-oculto" id="account_menu">'+
+				'<p class="texto">Aún no se ha iniciado sesión.</p>'+
+				'<a href="https://gloriabeltran.github.io/magic-moon/login" class="enlace">'+
+					'<button class="btn" id="btn_new_user">Iniciar sesión</button>'+
+				'</a>'+
+			'</div>'
+		);
+	
+		// Ahora insertamos el codigo en el elemento(div) con el id="contenedor"
+		var contenidoAnterior = document.getElementById("contenedor").innerHTML;
+		var contenidoNuevo = contenidoAnterior + (CSS + HTML);
+	
+		document.getElementById("contenedor").innerHTML = contenidoNuevo;
+	}
+	renderAccountMenu();
+}
+renderComponents("contenedor");
+document.getElementById("btn_account").addEventListener("click", () => {
+	document.getElementById("account_menu").classList.toggle("account_menu-oculto");
 });
