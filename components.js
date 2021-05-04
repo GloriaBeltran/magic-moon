@@ -14,7 +14,7 @@ function renderComponents(parent) {
 				"</a>" +
 				'<ul class="navigation_menu_ul" id="navigation_menu_ul">' +
 				'<li class="list_item"><a href="https://gloriabeltran.github.io/magic-moon/belleza" class="link" id="link_belleza">Belleza</a></li>' +
-				'<li class="list_item"><a href="https://gloriabeltran.github.io/magic-moon/cuidado_corporal" class="link" id="link_cuidado_corporal">Cuidado Corporal</a></li>' +
+				'<li class="list_item"><a href="https://gloriabeltran.github.io/magic-moon/cuidado-corporal" class="link" id="link_cuidado_corporal">Cuidado Corporal</a></li>' +
 				'<li class="list_item"><a href="https://gloriabeltran.github.io/magic-moon/accesorios" class="link" id="link_accesorios">Accesorios</a></li>' +
 				'<li class="list_item"><a href="https://gloriabeltran.github.io/magic-moon/blog" class="link" id="link_blog">Blog</a></li>' +
 				"</ul>" +
@@ -288,6 +288,7 @@ function renderComponents(parent) {
 			'.contenedor .account_menu .texto {'+
 			'font-size: 1.2rem;'+
 			'font-weight: 600;'+
+			'color: #000 !important'+
 			'}'+
 			'.contenedor .account_menu .enlace .btn {'+
 			'background-color: #fff;'+
