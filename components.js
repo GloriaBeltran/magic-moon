@@ -253,7 +253,7 @@ function renderComponents(parent) {
 				"transition: all 200ms ease;" +
 				"}" +
 				".contenedor .footer .navigation_menu .navigation_menu_ul .list_item .link:hover {" +
-				"color: #080;" +
+				"color: #999;" +
 				"}" +
 				"</style>"
 		);

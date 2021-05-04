@@ -10,7 +10,7 @@ body {
 	height: 400px;
 	width: 100%;
 	background-size: 200%;
-	animation: movimiento 13s infinite linear alternate;
+	animation: movimiento 20s infinite linear alternate;
 }
  @keyframes movimiento{
 	from{
@@ -40,14 +40,10 @@ body {
 }
 .formulario {
 	width: 250px;
-	margin: 0 auto;
 	height: 50px;
 }
 p {
 	text-align: center;
-}
-.formulario label {
-	font-size: 20px;
 }
 input[type="radio"] {
 	display: none;
