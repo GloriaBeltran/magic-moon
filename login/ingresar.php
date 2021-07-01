@@ -5,10 +5,9 @@ require_once "../lib/db.config.php";
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-
 if (isset($email)) {
 	$db = new DB("localhost", "root", "", "dbmagicmoon");
-	$consulta = $db->obtenerUsuario($email);
+	$consulta = $db->getPassword($email);
 	$server_password = mysqli_fetch_row($consulta)[0];
 	if (isset($server_password)) {
 		if ($password == $server_password) {
@@ -30,7 +29,7 @@ if (isset($email)) {
 		print ('<script>'.
 					'Swal.fire({'.
 					'icon: "error",'.
-					'title: "El email no existe"'.
+					'title: "El usuario con ese email no existe"'.
 				'});'.
 		   '</script>');
 	}

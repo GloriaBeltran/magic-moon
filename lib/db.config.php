@@ -17,7 +17,7 @@ class DB {
 	public function registrarUsuario($nombre, $email, $telefono, $password) {
 		return mysqli_query($this->connect(), "INSERT INTO tblusuarios(uid, nombre, email, telefono, password) VALUES('$telefono', '$nombre', '$email', '$telefono', '$password')");
 	}
-	public function obtenerUsuario($email) {
+	public function getPassword($email) {
 		return mysqli_query($this->connect(), "SELECT password FROM tblusuarios WHERE email = '$email'");
 	}
 }

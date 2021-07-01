@@ -13,7 +13,7 @@
 	<div class="contenedor" id="contenedor">
 		<section class="main" id="main">
 			<h1 class="titulo" id="titulo">Iniciar Sesión</h1>
-			<form class="formulario" id="formulario" method="POST">
+			<form class="formulario" id="formulario" method="POST" autocomplete="off">
 				<!-- Grupo: Correo Electronico -->
 				<div class="grupo_email" id="grupo_email">
 					<label for="input_email" class="label" id="label_email">Correo Electronico</label>
@@ -33,7 +33,8 @@
 	<script src="https://kit.fontawesome.com/4060128349.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><script src="../components.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="../components.js"></script>
 	<?php require_once "ingresar.php"; ?>
 </body>
 </html>
