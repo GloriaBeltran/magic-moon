@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 if (isset($email)) {
-	$db = new DB("localhost", "root", "", "dbmagicmoon");
+	$db = new DB();
 	$consulta = $db->getPassword($email);
 	$server_password = mysqli_fetch_row($consulta)[0];
 	if (isset($server_password)) {
