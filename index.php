@@ -9,10 +9,59 @@
 	<title>Magic Moon</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="../css/header.css">
 </head>
 
 <body>
 	<div class="contenedor" id="contenedor">
+		<div class="account_menu account_menu-oculto" id="account_menu">
+			<div class="account_menu account_menu-oculto" id="account_menu">
+				<p class="texto">Aún no se ha iniciado sesión.</p>
+				<a href="login" class="enlace">
+					<button class="btn" id="btn_new_user">Iniciar sesión</button>
+				</a>
+			</div>
+			<div class="menu_carrito menu_carrito-oculto" id="menu_carrito">
+				<div class="producto">
+					<h3 class="titulo">Jabon</h3>
+					<i class="fas fa-trash"></i>
+				</div>
+				<div class="producto">
+					<h3 class="titulo">Jabon</h3>
+					<i class="fas fa-trash"></i>
+				</div>
+				<div class="producto">
+					<h3 class="titulo">Jabon</h3>
+					<i class="fas fa-trash"></i>
+				</div>
+				<div class="producto">
+					<h3 class="titulo">Jabon</h3>
+					<i class="fas fa-trash"></i>
+				</div>
+			</div>
+			<p class="texto">Aún no se ha iniciado sesión.</p>
+			<a href="login" class="enlace">
+				<button class="btn" id="btn_new_user">Iniciar sesión</button>
+			</a>
+		</div>
+		<div class="menu_carrito menu_carrito-oculto" id="menu_carrito">
+			<div class="producto">
+				<h3 class="titulo">Jabon</h3>
+				<i class="fas fa-trash"></i>
+			</div>
+			<div class="producto">
+				<h3 class="titulo">Jabon</h3>
+				<i class="fas fa-trash"></i>
+			</div>
+			<div class="producto">
+				<h3 class="titulo">Jabon</h3>
+				<i class="fas fa-trash"></i>
+			</div>
+			<div class="producto">
+				<h3 class="titulo">Jabon</h3>
+				<i class="fas fa-trash"></i>
+			</div>
+		</div>
 		<div class="account_menu account_menu-oculto" id="account_menu">
 			<p class="texto">Aún no se ha iniciado sesión.</p>
 			<a href="login" class="enlace">

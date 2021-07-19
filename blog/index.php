@@ -3,42 +3,21 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="author" content="Imagen2021">
-	<title>Iniciar Sesión</title>
+	<title>Magic Moon</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="shortcut icon" href="https://gloriabeltran.github.io/magic-moon/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="../css/header.css">
 </head>
 
 <body>
+
 	<div class="contenedor" id="contenedor">
 		<div class="account_menu account_menu-oculto" id="account_menu">
-			<div class="account_menu account_menu-oculto" id="account_menu">
-				<p class="texto">Aún no se ha iniciado sesión.</p>
-				<a href="login" class="enlace">
-					<button class="btn" id="btn_new_user">Iniciar sesión</button>
-				</a>
-			</div>
-			<div class="menu_carrito menu_carrito-oculto" id="menu_carrito">
-				<div class="producto">
-					<h3 class="titulo">Jabon</h3>
-					<i class="fas fa-trash"></i>
-				</div>
-				<div class="producto">
-					<h3 class="titulo">Jabon</h3>
-					<i class="fas fa-trash"></i>
-				</div>
-				<div class="producto">
-					<h3 class="titulo">Jabon</h3>
-					<i class="fas fa-trash"></i>
-				</div>
-				<div class="producto">
-					<h3 class="titulo">Jabon</h3>
-					<i class="fas fa-trash"></i>
-				</div>
-			</div>
 			<p class="texto">Aún no se ha iniciado sesión.</p>
 			<a href="login" class="enlace">
 				<button class="btn" id="btn_new_user">Iniciar sesión</button>
@@ -89,30 +68,212 @@
 				<div class="user_functions" id="header_user_functions"><i class="fas fa-user-circle btn" id="btn_account" aria-hidden="true"></i><i class="fas fa-shopping-cart btn" id="btn_shop_cart" aria-hidden="true"></i></div>
 			</div>
 		</header>
-		<section class="main" id="main">
-			<h1 class="titulo" id="titulo">Iniciar Sesión</h1>
-			<form class="formulario" id="formulario" method="POST" autocomplete="off">
-				<!-- Grupo: Correo Electronico -->
-				<div class="grupo_email" id="grupo_email">
-					<label for="input_email" class="label" id="label_email">Correo Electronico</label>
-					<input type="email" class="input" id="input_email" name="email">
+		<div class="container">
+			<h1 class="text-center titulo"> Tu espacio de esparcimiento </h1>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="img/Imagen1.png" style="margin: 0 auto; " width="100%" height="225" role="img">
+					</div>
+					<div class="col-sm-6">
+						<img src="img/Imagen2.png" style="margin: 0 auto; " width="100%" height="225" role="img">
+					</div>
 				</div>
-				<!-- Grupo: Contraseña -->
-				<div class="grupo_password" id="grupo_password">
-					<label for="input_password" class="label" id="label_password">Contraseña</label>
-					<input type="password" class="input" id="input_password" name="password">
+			</div>
+
+
+
+			<div class="container">
+				<div class="row">
+					<div class="col m-2">
+						<img src="img/Imagen9.png" style="margin: 0 auto; " width="100%" height="225" role="img">
+					</div>
+					<div class="col m-2">
+						<img src="img/Imagen10.png" style="margin: 0 auto; " width="100%" height="225" role="img">
+					</div>
+					<div class="col m-2">
+						<img src="img/Imagen7.png" style="margin: 0 auto; " width="100%" height="225" role="img">
+					</div>
+
 				</div>
-				<button class="btn" id="btn-enviar">Ingresar</button>
-			</form>
-			<p class="texto_nuevo_usuario" id="texto_nuevo_usuario">¿No tienes cuenta? <a href="../registro" class="enlace">¡Registrate!</a></p>
-			<p class="texto_recuperar_contraseña" id="texto_recuperar_contraseña">¿Has olvidado tu contraseña? <a href="../recuperar-contraseña" class="enlace">Recuperar contraseña</a></p>
-		</section>
+			</div>
+
+			<div class="container">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<blockquote class="blockquote text-center">
+								<p class="mb-0">"La belleza comienza cuando decides ser tu misma".</p>
+								<footer class="blockquote-footer"> COCO CHANEL </footer>
+							</blockquote>
+						</div>
+						<div class="carousel-item">
+							<blockquote class="blockquote text-center">
+								<p class="mb-0">"Es difícil juzgar la belleza: la belleza es un enigma".</p>
+								<footer class="blockquote-footer"> FIODOR DOSTOIEVSKI </footer>
+							</blockquote>
+						</div>
+						<div class="carousel-item">
+							<blockquote class="blockquote text-center">
+								<p class="mb-0">“La paz comienza con una sonrisa”.</p>
+								<footer class="blockquote-footer"> MADRE TERESA DE CALCUTA </footer>
+							</blockquote>
+						</div>
+						<div class="carousel-item">
+							<blockquote class="blockquote text-center">
+								<p class="mb-0">“Una mujer fuerte es una mujer decidida a hacer algo que otros están decididos a no hacer”.</p>
+								<footer class="blockquote-footer"> MARGW PIERCY </footer>
+							</blockquote>
+						</div>
+						<div class="carousel-item">
+							<blockquote class="blockquote text-center">
+								<p class="mb-0">“Puedes encarcelar a un hombre, pero no una idea. Exiliar a un hombre, pero no una idea. Matar a un hombre, pero no una idea”.</p>
+								<footer class="blockquote-footer"> BENAZIR BHUTTO </footer>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="row mb-2">
+				<div class="col-md-6">
+					<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+						<div class="col p-4 d-flex flex-column position-static">
+							<strong class="d-inline-block mb-2 text-primary">Nutrición</strong>
+							<h3 class="mb-0">Belleza y Nutrición</h3>
+							<div class="mb-1 text-muted">Abril 12</div>
+							<p class="card-text mb-auto">La influencia de la alimentación en la belleza.</p>
+							<a href="#" class="stretched-link">Sigue leyendo</a>
+						</div>
+						<div class="col-auto d-none d-lg-block">
+							<img src="img/Imagen11.png" style="margin: 0 auto; " width="255" height="250">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+						<div class="col p-4 d-flex flex-column position-static">
+							<strong class="d-inline-block mb-2 text-success">Nutrición</strong>
+							<h3 class="mb-0">Alimentos que te sientan bien</h3>
+							<div class="mb-1 text-muted">abril 04</div>
+							<p class="mb-auto">Alimentos hidratantes para una piel hermosa.</p>
+							<a href="#" class="stretched-link">Sigue leyendo</a>
+						</div>
+						<div class="col-auto d-none d-lg-block">
+							<img src="img/Imagen12.png" style="margin: 0 auto; " width="255" height="250">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mb-2">
+				<div class="col-md-6">
+					<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+						<div class="col p-4 d-flex flex-column position-static">
+							<strong class="d-inline-block mb-2 text-primary">Tip de la semena</strong>
+							<h3 class="mb-0">La alimentación saludable como un estilo de vida saludable</h3>
+							<div class="mb-1 text-muted">Abril 25</div>
+							<p class="card-text mb-auto">¿A qué se llama alimentación saludable?</p>
+							<a href="#" class="stretched-link">Sigue leyendo</a>
+						</div>
+						<div class="col-auto d-none d-lg-block">
+							<img src="img/Imagen13.png" style="margin: 0 auto; " width="255" height="320">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+						<div class="col p-4 d-flex flex-column position-static">
+							<strong class="d-inline-block mb-2 text-success">Belleza</strong>
+							<h3 class="mb-0">Conceptos nuevos de belleza que debes conocer </h3>
+							<div class="mb-1 text-muted">abril 04</div>
+							<p class="mb-auto">Bioestimulación, el nuevo concepto anti age.</p>
+							<a href="#" class="stretched-link">Sigue leyendo</a>
+						</div>
+						<div class="col-auto d-none d-lg-block">
+							<img src="img/Imagen14.png" style="margin: 0 auto; " width="255" height="320">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<main role="main" class="container">
+				<div class="row">
+					<div class="col-md-8 blog-main">
+						<h3 class="pb-4 mb-4 font-italic border-bottom">
+							¿Cómo estas cuidando tu piel?
+						</h3>
+
+						<div class="blog-post">
+							<h2 class="blog-post-title">Tú piel tiene buenos hábitos, ¿Tú también?</h2>
+							<p class="blog-post-meta">Febrero 01, 2021 por <a href="#">POND'S</a></p>
+
+							<p>descubrió que nuestra piel es de hecho muy buena para cuidarse por sí misma. Bajo condiciones adecuadas, la piel es capaz de regular su propia temperatura y sus niveles de humectación, de protegerse de los rayos dañinos del sol e incluso de llevar a cabo sus propios procesos de renovación.</p>
+							<hr>
+							<p>El proceso de la piel para autorrenovarse se llama descamación – es un proceso natural y delicado de auto-exfoliación. La piel está diseñada para despojarse de sus capas superficiales de manera ordenada. Ello a través de las enzimas de la piel que remueven una estructura celular llamada desmosomas, los cuales ayudan a las células a mantenerse unidas unas con otras.</p>
+							<blockquote>
+								<p>La piel se despoja de una capa por día, y este es un proceso natural. Entonces, ¿eso significa que no me debo preocupar por mi piel?. Desafortunadamente, nosotros vivimos en una época muy contaminada – con rayos UV, químicos, polvo, suciedad y bacterias. Estos contaminantes, junto con el calor, el frío y los climas secos en los que vivimos, producen condiciones perjudiciales dentro de nuestra piel que hacen que no funcione adecuadamente, creando un proceso desorganizado de renovación celular. Esta es la razón de por qué necesitamos un régimen de limpieza para la piel.</p>
+							</blockquote>
+							<p>La limpieza ayuda a que nuestra piel mantenga un proceso de autorrenovación sano.Sin embargo, de manera inconsciente hacemos las cosas difíciles para nuestra propia piel. Nuestros malos hábitos pueden contribuir a que surjan problemas como acné, manchas oscuras y arrugas. </p>
+
+
+						</div>
+
+						<nav class="blog-pagination">
+							<a class="btn btn-outline-primary" href="#">Antigüo</a>
+							<a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Reciente</a>
+						</nav>
+
+					</div><!-- /.blog-main -->
+
+					<aside class="col-md-4 blog-sidebar">
+						<div class="p-4 mb-3 rounded">
+							<h4 class="font-italic">CONOCE TU PIEL</h4>
+							<p class="mb-0">Realiza test del pañuelo y descubre tu tipo de piel.Prueba lo siguiente: toma un pañuelo de papel y limpia tu cara. <em>¿Qué es lo que ves en el pañuelo?</em>.</p>
+							<a href="#" class="stretched-link">Sigue leyendo</a>
+						</div>
+						<div class="p-4">
+							<h4 class="font-italic">Archivos</h4>
+							<ol class="list-unstyled mb-0">
+								<li><a href="#">Marzo 2021</a></li>
+								<li><a href="#">Febrero 2021</a></li>
+								<li><a href="#">Enero 2021</a></li>
+								<li><a href="#">Diciembre 2020</a></li>
+								<li><a href="#">Noviembre 2020</a></li>
+								<li><a href="#">Octubre 2020</a></li>
+								<li><a href="#">Septiembre 2020</a></li>
+								<li><a href="#">Agosto 2020</a></li>
+								<li><a href="#">Julio 2020</a></li>
+								<li><a href="#">Junio 2020</a></li>
+								<li><a href="#">Mayo 2020</a></li>
+								<li><a href="#">Abril 2020</a></li>
+							</ol>
+						</div>
+
+
+					</aside><!-- /.blog-sidebar -->
+
+				</div><!-- /.row -->
+
+			</main><!-- /.container -->
+
+
+		</div>
 	</div>
+
+
+
+
 	<script src="https://kit.fontawesome.com/4060128349.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-	<?php require_once "ingresar.php"; ?>
 	<script>
 		document.getElementById("btn_account").addEventListener("click", () => document.getElementById("account_menu").classList.toggle("account_menu-oculto"));
 		document.getElementById("btn_shop_cart").addEventListener("click", () => document.getElementById("menu_carrito").classList.toggle("menu_carrito-oculto"));
