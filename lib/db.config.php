@@ -54,6 +54,6 @@ class DB {
 		// Define la base de datos a usar
 		$this->setDatabase("dbmagicmoon");
 		// Ejecuta la sentencia SELECT para obtener la contraseña
-		return mysqli_query($this->connect(), "SELECT password FROM tblusuarios WHERE email = '$email'");
+		return mysqli_query($this->connect(), "SELECT password, uid FROM tblusuarios WHERE email = '$email'");
 	}
 }
