@@ -2,6 +2,9 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+CREATE DATABASE IF NOT EXISTS dbmagicmoon;
+USE dbmagicmoon;
+
 CREATE TABLE IF NOT EXISTS tblproductos (
 	id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	nombre varchar(200) NOT NULL,
