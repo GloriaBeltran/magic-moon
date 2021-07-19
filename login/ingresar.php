@@ -2,22 +2,18 @@
 
 require_once "../lib/db.config.php";
 
-$email = $_POST['email'];
-$password = $_POST['password'];
-
-if (isset($email)) {
+if (isset($_POST["email"])) {
+	$email = $_POST['email'];
+	$password = $_POST['password'];
 	$db = new DB();
-	$consulta = mysqli_fetch_row($db->getPassword($email));
-	$server_password = $consulta[0];
-	$uid = $consulta[1];
+	$consulta = $db->getPassword($email);
+	$server_password = mysqli_fetch_row($consulta)[0];
 	if (isset($server_password)) {
 		if ($password == $server_password) {
-			setcookie("uid", $uid);
-			// print $_COOKIE["uid"];
 			print('<script>' .
 				'Swal.fire({' .
 				'icon: "success",' .
-				'title: "' . $uid . '"' .
+				'title: "Login exitoso"' .
 				'});' .
 				'</script>');
 		} else {

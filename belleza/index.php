@@ -36,24 +36,7 @@ if (isset($producto) and isset($nombre)) {
 				<button class="btn" id="btn_new_user">Iniciar sesión</button>
 			</a>
 		</div>
-		<div class="menu_carrito menu_carrito-oculto" id="menu_carrito">
-			<div class="producto">
-				<h3 class="titulo">Jabon</h3>
-				<i class="fas fa-trash"></i>
-			</div>
-			<div class="producto">
-				<h3 class="titulo">Jabon</h3>
-				<i class="fas fa-trash"></i>
-			</div>
-			<div class="producto">
-				<h3 class="titulo">Jabon</h3>
-				<i class="fas fa-trash"></i>
-			</div>
-			<div class="producto">
-				<h3 class="titulo">Jabon</h3>
-				<i class="fas fa-trash"></i>
-			</div>
-		</div>
+
 		<header class="header" id="header">
 			<nav class="navigation_menu" id="navigation_menu"><a href="../">
 					<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="576" viewBox="0 0 960 576">
@@ -78,7 +61,7 @@ if (isset($producto) and isset($nombre)) {
 			</nav>
 			<div class="user_bar" id="header_user_bar">
 				<form class="searcher" id="page_searcher"><input type="text" class="input" id="input_search_page_searcher" name="q"><i class="fas fa-search btn" id="btn_search" aria-hidden="true"></i></form>
-				<div class="user_functions" id="header_user_functions"><i class="fas fa-user-circle btn" id="btn_account" aria-hidden="true"></i><i class="fas fa-shopping-cart btn" id="btn_shop_cart" aria-hidden="true"></i></div>
+				<div class="user_functions" id="header_user_functions"><i class="fas fa-user-circle btn" id="btn_account" aria-hidden="true"></i></div>
 			</div>
 		</header>
 		<div style="text-align: center;">
