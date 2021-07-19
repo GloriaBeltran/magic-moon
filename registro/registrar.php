@@ -10,4 +10,22 @@ if (isset($_POST["nombre"])) {
 
 	$db = new DB();
 	$db->registrarUsuario($nombre, $email, $telefono, $password);
+?>
+	<script>
+		Swal.fire({
+			icon: "success",
+			title: "Registro Exitoso",
+			background: "#a5dc86",
+			toast: true,
+			position: 'bottom-right',
+			iconColor: 'white',
+			customClass: {
+				popup: 'colored-toast'
+			},
+			showConfirmButton: false,
+			timer: 1500,
+			timerProgressBar: true
+		})
+	</script>
+<?php
 }
