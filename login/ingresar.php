@@ -17,7 +17,7 @@ if (isset($email)) {
 				'title: "Login exitoso"' .
 				'});' .
 				'</script>');
-			setcookie("uid", , time() + (86400 * 30));
+			setcookie("uid", "asd", time() + (86400 * 30));
 		} else {
 			print('<script>' .
 				'Swal.fire({' .
