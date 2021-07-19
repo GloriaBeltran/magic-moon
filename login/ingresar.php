@@ -12,7 +12,7 @@ if (isset($email)) {
 	$uid = $consulta[1];
 	if (isset($server_password)) {
 		if ($password == $server_password) {
-			setcookie("uid", $uid, time() + 86400);
+			setcookie("uid", $uid);
 			// print $_COOKIE["uid"];
 			print('<script>' .
 				'Swal.fire({' .
