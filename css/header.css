@@ -38,7 +38,7 @@
 .contenedor .account_menu {
 	position: absolute;
 	top: 160px;
-	right: 120px;
+	right: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -47,6 +47,7 @@
 	width: 25%;
 	border-radius: 5px;
 	padding: 20px;
+	z-index: 1000;
 }
 .contenedor .account_menu .texto {
 	font-size: 1.2rem;

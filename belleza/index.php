@@ -13,20 +13,7 @@
 	<link rel="stylesheet" href="../css/header.css">
 </head>
 
-<?php
 
-require_once "../lib/db.config.php";
-$producto = $_GET["producto"];
-$nombre = $_GET["nombre"];
-
-if (isset($producto) and isset($nombre)) {
-	$db = new DB();
-	$db->agregarProductoAlCarrito($producto, $nombre);
-	print_r($_COOKIE);
-	print "Producto guardado";
-}
-
-?>
 
 <body>
 	<div class="contenedor" id="contenedor">

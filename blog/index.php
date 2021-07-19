@@ -19,7 +19,7 @@
 	<div class="contenedor" id="contenedor">
 		<div class="account_menu account_menu-oculto" id="account_menu">
 			<p class="texto">Aún no se ha iniciado sesión.</p>
-			<a href="login" class="enlace">
+			<a href="../login" class="enlace">
 				<button class="btn" id="btn_new_user">Iniciar sesión</button>
 			</a>
 		</div>
