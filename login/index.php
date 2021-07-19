@@ -97,7 +97,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script>
 		document.getElementById("btn_account").addEventListener("click", () => document.getElementById("account_menu").classList.toggle("account_menu-oculto"));
-		document.getElementById("btn_shop_cart").addEventListener("click", () => document.getElementById("menu_carrito").classList.toggle("menu_carrito-oculto"));
+		
 	</script>
 	<?php require_once "ingresar.php"; ?>
 </body>
